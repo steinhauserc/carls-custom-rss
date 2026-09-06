@@ -5,8 +5,8 @@ on:
     branches: ["main"]
   workflow_dispatch:
   schedule:
-    # Runs at 8:00 UTC every day
-    - cron: '0 8 * * *'
+    # Runs at 01:00 UTC every day
+    - cron: '0 1 * * *'
 
 permissions:
   contents: read

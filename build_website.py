@@ -18,7 +18,7 @@ def main() -> None:
 
 """
     for source in SOURCES:
-        base_index_md += f"- [{source.title}](./feeds/{source.output_filename})\n"
+        base_index_md += f"- {source.title} - [RSS](./feeds/{source.output_filename}) - [Source]({source.link})\n"
 
     if os.path.exists('html'):
         shutil.rmtree('html')
